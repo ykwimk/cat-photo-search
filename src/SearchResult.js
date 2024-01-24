@@ -51,7 +51,8 @@ class SearchResult {
       : `<div>데이터가 없습니다.</div>`;
 
     this.$searchResult.querySelectorAll(".item").forEach(($item, index) => {
-      $item.addEventListener("click", () => {
+      $item.addEventListener("click", (e) => {
+        e.stopPropagation();
         this.onClick(this.data[index]);
       });
     });

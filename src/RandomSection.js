@@ -12,6 +12,6 @@ class RandomSection {
   }
 
   render() {
-    console.log('data: ', data);
+    console.log('data: ', this.data);
   }
 }
